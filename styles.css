@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.invoice-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-name {
+  margin: 0;
+}
+
+.address,
+.contact {
+  margin-bottom: 10px;
+}
+
+.invoice-number {
+  margin-top: 30px;
+}
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.total-amount {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.payment-method,
+.thank-you {
+  margin-top: 10px;
+}
+
+.cashier-name {
+  border: none;
+}
+
+.additional-info {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+[contenteditable] {
+  border: 1px solid #ddd;
+  padding: 5px;
+  outline: none;
+}
+
+.button-container {
+  position: fixed;
+  top: 20px;
+  right: 200px;
+}

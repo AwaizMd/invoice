@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Invoice</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="invoice-container">
+        <h1 class="restaurant-name" contenteditable>TAJMAHAL RESTAURANT</h1>
+        <div class="address" contenteditable>Address: Hyderabad</div>
+        <div class="contact" contenteditable>Contact: +919030984196</div>
+        <hr>
+        <h2 class="invoice-number">Invoice Number: <span id="generatedInvoiceNumber"></span></h2>
+        <div class="date">Date: <span id="currentDate"></span></div>
+        <div class="customer-name" contenteditable>Customer Name: Ibraheem Khaleel</div>
+        <div class="cashier-name" contenteditable>Cashier Name: John</div>
+
+
+        <h3 class="section-title">Items:</h3>
+        <table id="item-table">
+            <tr>
+                <th>Item No.</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td contenteditable>1</td>
+                <td contenteditable data-placeholder="Biryani"></td>
+                <td contenteditable data-placeholder="1"></td>
+                <td contenteditable data-placeholder="80"></td>
+            </tr>
+        </table>
+
+        <button id="add-row-btn" onclick="addRow()">+</button>
+
+        <div class="total-amount">Total Amount: 0.00</div>
+        <div class="payment-method">
+            <input type="radio" id="cash-option" name="payment-method" value="cash">
+            <label for="cash-option"><i class="fas fa-money-bill-alt"></i> Cash</label>
+
+            <input type="radio" id="online-option" name="payment-method" value="online">
+            <label for="online-option"><i class="fas fa-credit-card"></i> Debit / Credit / Interact</label>
+        </div>
+
+
+        <div class="thank-you">Thank you for dining with us!</div>
+        <div class="additional-info">Home Delivery Available</div>
+        <div class="additional-info">Party Orders Catered</div>
+    </div>
+    <!-- Download and Print Buttons -->
+    <div class="button-container">
+        <button onclick="printPage()">Print</button>
+    </div>
+    <script src="./invoice.js"></script>
+</body>
+
+</html>
